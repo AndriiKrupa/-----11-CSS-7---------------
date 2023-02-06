@@ -1,0 +1,88 @@
+*{
+   padding: 0;
+   margin: 0;
+   border: 0px;}
+*,*::before,*::after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}/*Наприклад хрестик в мозілі в тегах імпут*/
+button{cursor: pointer;}/*Наприклад відступи в  мозілі для кнопок*/
+button::-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}/*чистяться стиля для маркірованих спискі*/
+img{vertical-align: none;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
+
+
+body{
+   padding: 30px;
+}
+
+.text {
+font-size: 24px;
+line-height: 33px;
+margin: 0 0 30px 0;
+}
+/* first-line задає стиль першій строці тексту */
+.text::first-line{
+color: green;
+}
+/* first-letter оприділяє стиль першого символа */
+.text::first-letter{
+   color: red;
+   font-size: 50px;
+   }
+
+
+.list {   
+}
+
+.list li{
+   font-size: 24px;
+   margin: 0 0 24px 0;
+   
+}
+/* before використовується для відображення бажаного контенту до вмісту елемента до якого він добавляється
+свойство before обовязково використовується з властивістю content без цьої властивості цей псевдо елемент 
+не відобразиться в браузері 
+властивість content може бути як пуста з лапками або з потрібним контентом який ми хочемо вивести до
+нашого блоку*/
+/* .list li::before{
+content: "«";
+} */
+.list li::before{
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: red;
+   display: inline-block;
+   margin: 0 10px 0 0;
+} 
+.list li:hover::before{
+   background-color: yellow;
+}
+
+
+
+
+
+/* after використовується для відображення потрібного контенту після вмісту елемента до якого він добавляється */
+/* .list li::after{
+content: "»";
+} */

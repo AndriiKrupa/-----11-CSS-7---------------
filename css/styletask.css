@@ -1,0 +1,158 @@
+*{
+   padding: 0;
+   margin: 0;
+   border: 0px;}
+*,*::before,*::after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}/*Наприклад хрестик в мозілі в тегах імпут*/
+button{cursor: pointer;}/*Наприклад відступи в  мозілі для кнопок*/
+button::-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}/*чистяться стиля для маркірованих спискі*/
+img{vertical-align: none;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight:400;}
+
+
+body{
+   background-color: #e8e8e8;;
+}
+
+
+
+.titel1 {
+text-transform: uppercase;
+width: 628px;
+height: 16px;
+color: #000000;
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 2,8px;
+margin: 30px auto;
+}
+.list {
+}
+.list li{
+   width: 550px;
+   height: 20px;
+   font-size: 20px;
+   margin: 20px auto;
+   color: #273d46;
+}
+.list li::before{
+   content: url(../img/check_icon+.png);
+   margin: 0 10px 0 0 ;
+   
+}
+
+.list li:nth-child(1){
+text-decoration: line-through;
+}
+.list li:hover:nth-child(1){
+   text-decoration: none;
+}
+
+.list li:nth-child(2){
+   font-weight: bold;
+}
+
+.list li:hover:nth-child(2)::before{
+   content: url(../img/check_icon.png);
+   margin: 0 10px 0 0 ;
+   color: red;
+}
+.list li:hover:nth-child(2){
+   color: red;
+   font-weight: 400;
+}
+
+
+
+.list li:nth-child(3){
+   font-style: italic;
+   font-weight: 400;
+}
+
+
+.list li:hover:nth-child(3){
+   font-style: normal;
+}
+.list li:nth-child(4){
+   text-transform: uppercase;
+   font-weight: 400;
+}
+.list li:hover:nth-child(4){
+   text-transform: none;
+}
+
+
+.butt {
+   display: block;
+   margin: 50px auto;
+   width: 200px;
+   height: 50px;
+   font-size: 18px;
+   color:#fff;
+   border-radius: 20px;
+   border: 1px solid black;
+   background-color: #80b7b3;
+   text-transform: uppercase;
+}
+.butt::after{
+   content: url(../img/Shape_2.png);
+   margin-left: 10px;
+}
+
+.butt:hover{
+   background-color:#273d46 ;
+   box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+}
+.butt:active{
+   background-color: #818181;
+}
+
+
+
+.text1 {
+   margin: 20px auto;
+   width: 761px;
+   height: 73px;
+   font-size: 18px;
+   color: #000000;
+   line-height: 28px;
+   font-weight: 400;
+}
+.text2 {
+   margin: 20px auto;
+   width: 761px;
+   height: 73px;
+   font-size: 18px;
+   color: #000000;
+   line-height: 28px;
+   font-weight: 400;
+}
+
+
+.text1::first-line{
+   color: red;
+}
+
+.text2::first-letter{
+color: red;
+font-size: 25px;
+}
